@@ -32,7 +32,7 @@ The app allows users to add phone numbers for MFA without MFA, using Microsoft G
 ## Technologies & Dependencies
 
 ### Frontend (app/)
-- React 17.x with TypeScript
+- React 17 with TypeScript
 - Material-UI (MUI) v5
 - i18next for internationalization
 - react-hook-form for form handling
@@ -74,7 +74,7 @@ bundle exec rspec    # Run tests
 
 ### Ruby Code
 - Follow RuboCop rules defined in `.rubocop.yml`
-- Target Ruby version: 2.6+
+- Target Ruby version: 2.7+
 - Line length: Max 80 characters
 - Method length: Max 40 lines
 - Always use `frozen_string_literal: true` at the top of files
@@ -84,7 +84,7 @@ bundle exec rspec    # Run tests
 ### TypeScript/React Code
 - Follow ESLint configuration from react-scripts
 - Use TypeScript strict mode
-- Target ES6 (ES2015)
+- Target ES6+ (esnext)
 - Use functional components with hooks
 - Use camelCase for variables and functions
 - Use PascalCase for React components
