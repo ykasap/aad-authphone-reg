@@ -24,6 +24,7 @@ interface ErrorPanelProps {
 
 interface ErrorProps {
   onBack: () => void;
+  children?: React.ReactNode;
 }
 
 type SetError = (error: Error) => void;
