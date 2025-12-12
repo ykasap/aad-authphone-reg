@@ -74,7 +74,7 @@ bundle exec rspec    # Run tests
 
 ### Ruby Code
 - Follow RuboCop rules defined in `.rubocop.yml`
-- Target Ruby version: 2.7+
+- Target Ruby version: 2.6+ (RuboCop), Runtime requirement: 2.7+ (README)
 - Line length: Max 80 characters
 - Method length: Max 40 lines
 - Always use `frozen_string_literal: true` at the top of files
@@ -84,7 +84,7 @@ bundle exec rspec    # Run tests
 ### TypeScript/React Code
 - Follow ESLint configuration from react-scripts
 - Use TypeScript strict mode
-- Target ES6+ (esnext)
+- Compile target: ES6, Module system: ESNext
 - Use functional components with hooks
 - Use camelCase for variables and functions
 - Use PascalCase for React components
@@ -129,7 +129,7 @@ Optional environment variables (set in `.env.local`):
 - Token caching is optional but recommended for performance
 
 ### Configuration
-- Backend can be customized via `app_config.rb` file
+- Backend can be customized by creating an `app_config.rb` file (not included by default)
 - Frontend messages and translations are in `public/locales/` JSON files
 - Support for multiple languages via i18next
 
