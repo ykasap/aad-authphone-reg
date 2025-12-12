@@ -100,7 +100,7 @@ bundle exec rspec    # Run tests
 
 ### Backend (api/)
 Required environment variables:
-- `MSGRAPH_TENANT`: Entra ID (formerly Azure AD) tenant ID
+- `MSGRAPH_TENANT`: Entra ID tenant ID
 - `MSGRAPH_CLIENT_ID`: Application client ID
 - `MSGRAPH_CLIENT_ASSERTION`: JWT assertion string (for certificate auth)
 - `MSGRAPH_CLIENT_SECRET`: Client secret (alternative to assertion)
@@ -118,7 +118,7 @@ Optional environment variables (set in `.env.local`):
 ## Important Requirements
 
 ### Security
-- **CRITICAL**: This app MUST be protected with user authentication by means other than Entra ID (formerly Azure AD)
+- **CRITICAL**: This app MUST be protected with user authentication by means other than Entra ID
 - Never commit secrets or credentials to source code
 - The API requires REMOTE_USER environment variable for authorization
 - UPN verification compares against REMOTE_USER by default
@@ -172,7 +172,7 @@ Optional environment variables (set in `.env.local`):
 
 ## When Making Changes
 
-1. **Understand the context**: This app bridges user authentication and Entra ID (formerly Azure AD) MFA registration
+1. **Understand the context**: This app bridges user authentication and Entra ID MFA registration
 2. **Maintain security**: Always consider authentication and authorization implications
 3. **Test integrations**: Changes may affect Graph API calls or authentication flow
 4. **Update documentation**: Keep README files in sync with code changes
