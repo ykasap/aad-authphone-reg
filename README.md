@@ -27,7 +27,7 @@ by means other than Azure AD._
 - Web browsers supporting ES6
 
 #### Server (REST API)
-- Ruby >= 2.7
+- Ruby >= 3.0 (tested with Ruby 3.4.1)
 
 #### To build
 - Node.js >= 14.0.0
