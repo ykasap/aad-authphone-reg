@@ -2,11 +2,24 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
+jest.mock('./i18n', () => ({
+  getLanguages: () => [
+    { code: 'en', text: 'English' },
+    { code: 'ja', text: '日本語' },
+  ],
+}));
+
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (str: string) => str,
+    i18n: {
+      changeLanguage: () => new Promise(() => {}),
+    },
   }),
-  changeLanguage: () => { },
+  initReactI18next: {
+    type: '3rdParty',
+    init: () => {},
+  },
 }));
 
 test('renders the input form', () => {

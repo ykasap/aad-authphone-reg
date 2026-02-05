@@ -1,4 +1,4 @@
-import { FC, FormEventHandler } from "react";
+import React, { FC, FormEventHandler } from "react";
 import { Grid, Button, } from "@mui/material";
 
 type FormButtonData = {
@@ -9,6 +9,7 @@ type FormButtonData = {
 type AppFormProps = {
   onSubmit?: FormEventHandler<HTMLFormElement>;
   buttons?: FormButtonData[];
+  children?: React.ReactNode;
 };
 
 const AppForm: FC<AppFormProps> = ({ children, onSubmit, buttons }) => {
