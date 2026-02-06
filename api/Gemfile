@@ -19,4 +19,4 @@ group :pg, optional: true do
   gem 'pg'
 end
 
-gem 'activerecord', group: %i[mysql2 pg]
+gem 'activerecord', '~> 7.0.8', group: %i[mysql2 pg]

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Migration class
-class CreateCachedTokens < ActiveRecord::Migration[6.1]
+class CreateCachedTokens < ActiveRecord::Migration[7.0]
   def change
     create_table :cached_tokens, id: false do |t|
       t.primary_key :id, :string, charset: :ascii
